@@ -1,0 +1,17 @@
+
+<h1>Quarterbacks</h1>
+
+        <table>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+            </tr>
+            <% @quarterbacks.each do |qb| %>
+            <tr>
+                <td><%= qb.name %></td>
+                <td><%= qb.rank %></td>
+                <td><%= qb.rank_string %></td>
+            </tr>
+            <% end %>
+        </table>
+
